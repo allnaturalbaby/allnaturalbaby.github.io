@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7cde32a7-b396-4a31-b213-b034d6c7a798" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/page_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/page_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/page_2.html" beforeDir="false" afterPath="$PROJECT_DIR$/page_2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/page_3.html" beforeDir="false" afterPath="$PROJECT_DIR$/page_3.html" afterDir="false" />
-    </list>
+    <list default="true" id="7cde32a7-b396-4a31-b213-b034d6c7a798" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,11 +40,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="K:\Web\100dOc" />
+      <recent name="D:\Web\HTML\100dOc\content\video" />
       <recent name="D:\Web\HTML\100dOc\html" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Web\HTML\100dOc\content\video" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Web\HTML\100dOc\html" />
     </key>
   </component>
@@ -79,7 +75,7 @@
       <workItem from="1580651306003" duration="12000" />
       <workItem from="1580651686504" duration="3396000" />
       <workItem from="1581355053533" duration="308000" />
-      <workItem from="1582059256643" duration="799000" />
+      <workItem from="1582059256643" duration="1123000" />
     </task>
     <servers />
   </component>

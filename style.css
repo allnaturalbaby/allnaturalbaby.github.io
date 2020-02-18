@@ -5,3 +5,7 @@
 .mpv {
     border-spacing: 5px;
 }
+
+body {
+    background-color: rgba(10,255,220,0.13)
+}
