@@ -1,16 +1,12 @@
-.red-text {
-    color: purple;
+.colored-text {
+    color: whitesmoke;
 }
 
 .mpv {
     border-spacing: 5px;
 }
 
-html {
-    background-color: #181e2a;
-    background: url("https://raw.githubusercontent.com/allnaturalbaby/allnaturalbaby.github.io/master/content/images/woah.jpg") no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+body {
+    background-size: auto;
+    background: #181e2a url(content/images/woah.jpg) no-repeat center top;
 }
