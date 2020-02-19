@@ -6,6 +6,11 @@
     border-spacing: 5px;
 }
 
-body {
-    background-color: rgba(10,255,220,0.13)
+html {
+    background-color: #181e2a;
+    background: url("https://raw.githubusercontent.com/allnaturalbaby/allnaturalbaby.github.io/master/content/images/woah.jpg") no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
