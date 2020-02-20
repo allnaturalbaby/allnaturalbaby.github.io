@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cde32a7-b396-4a31-b213-b034d6c7a798" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/page_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/page_3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/page_1.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,17 +50,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="K:\Web\100dOc" />
+      <recent name="D:\Web\HTML\100dOc\html" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="K:\Web\100dOc" />
       <recent name="D:\Web\HTML\100dOc\content\video" />
-      <recent name="D:\Web\HTML\100dOc\html" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Web\HTML\100dOc\html" />
     </key>
   </component>
@@ -104,7 +104,7 @@
       <workItem from="1582059256643" duration="10288000" />
       <workItem from="1582114577877" duration="2981000" />
       <workItem from="1582145979047" duration="4185000" />
-      <workItem from="1582190372289" duration="2537000" />
+      <workItem from="1582190372289" duration="3222000" />
     </task>
     <task id="LOCAL−00001" summary="Commit through IDE">
       <created>1582145581351</created>
