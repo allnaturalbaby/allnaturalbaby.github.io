@@ -9,7 +9,6 @@ body {
     font-size: 100%;
     margin: 0;
     padding: 0 0 6% 0;
-    width: 100%;
 }
 
 header {
@@ -32,10 +31,15 @@ header .logo a {
     width: 70px;
 }
 
+.site-nav {
+    white-space: nowrap;
+}
+
 .site-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    text-shadow: black 1px 1px;
 }
 
 .site-nav li {
@@ -51,9 +55,6 @@ header .logo a {
     text-decoration: none;
 }
 
-.site-nav {
-    white-space: nowrap;
-}
 .site-nav-ul:first-child {
     margin-left: 0;
 }
@@ -70,7 +71,9 @@ header .logo a {
 .line {
     border: 2px solid lightgray;
     position: absolute;
+    width: 100%;
 }
+
 .features {
     background: white;
     color: gray;
