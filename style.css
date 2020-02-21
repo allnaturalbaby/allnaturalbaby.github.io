@@ -1,29 +1,9 @@
-.colored-text {
-    color: red;
-}
-
 body {
     background: rgb(58, 58, 58);
     color: white;
     font-family: 'Roboto', sans-serif;
     margin: 0 5px 0 0;
     padding: 0 0 0 0;
-}
-
-h1 {
-    background: black;
-    color: rgb(0, 183, 255);
-}
-
-h2 {
-    color: rgb(158, 158, 158);
-}
-
-button {
-    background: gray;
-    border-radius: 8px;
-    border: none;
-    color: white;
 }
 
 header {
