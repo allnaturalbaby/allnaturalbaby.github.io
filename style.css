@@ -30,6 +30,17 @@ header .logo a {
     width: 70px;
 }
 
+.site-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
 .site-nav-ul a {
     color: whitesmoke;
     font-size: 25px;
@@ -45,47 +56,43 @@ header .logo a {
     margin-left: 0;
 }
 
-section {
+.site-nav-ul li:first-child {
+    margin-left: 0;
+}
+
+.site-nav-ul li a:hover {
+    color: black;
+    /*color: white;*/
+}
+
+.features {
     background: white;
     color: gray;
+    padding: 20px;
     display: flex;
     flex-direction: row;
 }
-div {
-    /*display: inline-block;*/
-    background: red;
+
+.features figure {
+    text-transform: uppercase;
     margin: auto;
-    width: 100px;
+    width: 200px;
+    text-align: center;
+}
+
+.features figure img {
+    border: 1px solid white;
+    border-radius: 50%;
+    box-shadow: grey 0 0 10px;
+    width: 120px;
 }
 
 footer {
     background: black;
+    color: grey;
+    font-size: 12px;
+    padding: 10px 10px;
+    text-align: left;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
 
-li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-li:first-child {
-    margin-left: 0;
-}
-
-a:hover {
-    color: white;
-}
-
-.features {
-
-}
-/*
-@font-face {
-    font-family: Roboto;
-    src: url("https://fonts.googleapis.com/css?family=Roboto&display=swap") format("font-woff");
-}*/
