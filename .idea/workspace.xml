@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7cde32a7-b396-4a31-b213-b034d6c7a798" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +122,7 @@
       <workItem from="1582190372289" duration="18761000" />
       <workItem from="1582230556464" duration="5364000" />
       <workItem from="1582245767704" duration="60000" />
-      <workItem from="1582245856561" duration="29000" />
+      <workItem from="1582245856561" duration="2618000" />
     </task>
     <task id="LOCAL−00001" summary="Commit through IDE">
       <created>1582145581351</created>
@@ -154,6 +158,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Commit through IDE" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="0" y="0" key="#Images" timestamp="1582246984655">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="0" y="0" key="#Images/0.0.1280.680@0.0.1280.680" timestamp="1582246984655" />
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582199022447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
