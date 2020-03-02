@@ -3,7 +3,8 @@ html {
     min-height: 100%;
 }
 body {
-    background: rgb(58, 58, 58);
+    /*background: rgb(58, 58, 58);*/
+    /*background: #28559A;*/
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 100%;
@@ -12,7 +13,7 @@ body {
 }
 
 header {
-    background: black linear-gradient(-150deg, lightslategrey, darkslategrey);
+    /*background-color: #4ABDAC;*/
     height: 120px;
     text-align: center;
     width: 100%;
@@ -32,6 +33,9 @@ header .logo a {
 }
 
 .site-nav {
+    background: url("content/images/citysil.png");
+    background-size: contain;
+    height: 120px;
     white-space: nowrap;
 }
 
@@ -69,13 +73,12 @@ header .logo a {
 }
 
 .line {
-    border: 2px solid lightgray;
+    border: 2px solid #3778C2; /* lightgray */
     position: relative;
 }
 
 .features {
-    background: white;
-    color: gray;
+    /*background: white;*/
     padding: 20px;
     margin: 0;
     display: flex;
@@ -97,8 +100,14 @@ header .logo a {
 }
 
 .features figure figcaption {
-    color: #4d4d4d;
+    /*color: #4d4d4d;*/
+    color: whitesmoke;
     font-size: 0.9rem;
+}
+
+.features figure:hover {
+    transition-duration: 0.05s;
+    transform: scale(0.93);
 }
 
 footer {
