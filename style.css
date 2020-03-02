@@ -70,8 +70,7 @@ header .logo a {
 
 .line {
     border: 2px solid lightgray;
-    position: absolute;
-    width: 100%;
+    position: relative;
 }
 
 .features {
