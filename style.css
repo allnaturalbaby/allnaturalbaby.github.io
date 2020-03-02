@@ -105,9 +105,17 @@ header .logo a {
     font-size: 0.9rem;
 }
 
-.features figure:hover {
+/*.features figure:hover {
     transition-duration: 0.05s;
     transform: scale(0.93);
+}*/
+
+/* disables the hover effect on mobile devices */
+@media(hover: hover) and (pointer: fine) {
+    .features figure:hover {
+        transition-duration: 0.05s;
+        transform: scale(0.93);
+    }
 }
 
 footer {
