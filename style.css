@@ -39,6 +39,13 @@ header .logo a {
     white-space: nowrap;
 }
 
+.site-nav:before {
+    content: "";
+    background: rgba(255, 255 , 0, 0.6);
+    height: 120px;
+    width: 100%;
+}
+
 .site-nav ul {
     list-style-type: none;
     margin: 0;
@@ -93,8 +100,8 @@ header .logo a {
 }
 
 .features figure img {
-    border: 1px solid white; /*testing purposes*/
     border-radius: 50%;
+    border: 1px solid white; /*testing purposes*/
     box-shadow: grey 0 0 10px;
     width: 120px;
 }
@@ -113,22 +120,22 @@ header .logo a {
 /* disables the hover effect on mobile devices */
 @media(hover: hover) and (pointer: fine) {
     .features figure:hover {
-        transition-duration: 0.05s;
         transform: scale(0.93);
+        transition-duration: 0.05s;
     }
 }
 
 footer {
     /*background: black;*/
-    /*overflow: hidden;*/
     /*border: 1px solid white;*/
+    /*overflow: hidden;*/
     bottom: 5px;
     color: grey;
-    padding: 0 0 2% 2%;
     font-size: 0.8rem;
+    height: 12px;
+    padding: 0 0 2% 2%;
     position: absolute;
     text-align: left;
-    height: 12px;
 }
 
 
