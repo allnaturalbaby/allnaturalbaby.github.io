@@ -18,3 +18,24 @@ function figAnim(test) {
         test.style.transform = "scale(0.9)";
     };
 }*/
+
+$(document).ready(function () {
+    $(".add-class").click(function () {
+        $(".border").addClass("add-css");
+    });
+    $(".remove-class").click(function () {
+        $(".border").removeClass("add-css");
+    });
+});
+
+
+
+/*$("figure").hover(function(){
+    $(".features").css("background-color", "yellow");
+}, function(){
+    $(".features").css("background-color", "pink");
+});*/
+
+/*$(document).ready(function () {
+    $(".border").css("color", "blue");
+});*/
