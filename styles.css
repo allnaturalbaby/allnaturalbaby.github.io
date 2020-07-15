@@ -7,21 +7,6 @@ body {
     padding: 0;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        font-size: large;
-    }
-    .topnav {
-        text-align: center;
-        margin-top: 50px;
-    }
-    .topnav a {
-        text-decoration: none;
-        border-radius: 50px;
-        margin: auto;
-    }
-}
-
 .topnav {
     overflow: hidden;
     text-align: center;
@@ -40,4 +25,22 @@ body {
 /* Prevents a tags from changing color after being clicked */
 a, a:visited, a:hover, a:active {
     color: inherit;
+}
+
+@media all and (max-width: 600px) {
+    body {
+        font-size: large;
+    }
+    /* .topnav {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .topnav a {
+        text-decoration: none;
+        border-radius: 50px;
+        margin: auto;
+    } */
+    .topnav {
+        margin-top: 50px;
+    }
 }
