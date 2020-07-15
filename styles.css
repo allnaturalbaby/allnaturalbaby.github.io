@@ -1,0 +1,41 @@
+body {
+    background-color: lightslategray;
+    font-family: 'Oxygen', sans-serif;
+    letter-spacing: 2px;
+    font-size: larger;
+    margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: large;
+    }
+
+    .nav-links {
+        border-radius: 50px;
+        margin: auto;
+    }
+}
+
+.nav {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.nav-links {
+    border-radius: 50px;
+    /* margin: auto; */
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+/* Prevents a tags from changing color after being clicked */
+a, a:visited, a:hover, a:active {
+    color: inherit;
+}
