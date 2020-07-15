@@ -20,41 +20,37 @@ body {
 
 .nav {
     display: flex;
-    display: -webkit-flex;
     flex-direction: row;
-    -webkit-flex-direction: row;
 	flex-wrap: nowrap;
     justify-content: center;
-    -webkit-justify-content: center;
     align-items: center;
-    -webkit-align-items: center;
     margin-top: 50px;
+    /* -webkit-align-items: center; */
+    /* -webkit-justify-content: center; */
+    /* -webkit-flex-direction: row; */
+    /* display: -webkit-flex; */
 }
 
-.nav-links {
+.nav a {
     border-radius: 50px;
     text-align: center;
+    border: 1px solid black;
     width: 3%;
-}
-
-.nav-links a {
-    /* border: 1px solid black; */
     text-decoration: none;
 }
 
-.test-content {
-    margin: auto;
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border: 1px solid black;
+.topnav {
+    overflow: hidden;
+    text-align: center;
+    
+    margin-top: 100px;
 }
 
-.l {
-    margin: 0 100% 0 0;
-    width: 50px;
-    height: 50px;
-    border: 1px solid black;
+.topnav a {
+    /* float: left; */
+    text-decoration: none;
+    padding: 0 10px 0 0;
+    font-size: 25px;
 }
 
 /* Prevents a tags from changing color after being clicked */
