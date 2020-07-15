@@ -11,47 +11,31 @@ body {
     body {
         font-size: large;
     }
-
-    .nav-links {
+    .topnav {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .topnav a {
+        text-decoration: none;
         border-radius: 50px;
         margin: auto;
     }
 }
 
-.nav {
-    display: flex;
-    flex-direction: row;
-	flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    /* -webkit-align-items: center; */
-    /* -webkit-justify-content: center; */
-    /* -webkit-flex-direction: row; */
-    /* display: -webkit-flex; */
-}
-
-.nav a {
-    border-radius: 50px;
-    text-align: center;
-    border: 1px solid black;
-    width: 3%;
-    text-decoration: none;
-}
-
 .topnav {
     overflow: hidden;
     text-align: center;
-    
+    align-items: center;
     margin-top: 100px;
 }
 
 .topnav a {
     /* float: left; */
     text-decoration: none;
-    padding: 0 10px 0 0;
+    margin: 0 10px 0 0;
     font-size: 25px;
 }
+
 
 /* Prevents a tags from changing color after being clicked */
 a, a:visited, a:hover, a:active {
