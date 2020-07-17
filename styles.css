@@ -56,16 +56,14 @@ footer img {
     /* background-color: blue; */
 }
 .content {margin: 0; padding: 0;}
+
 .proj-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 5px;
     align-items: stretch;
-}
-.border {
-    border: 1px solid white;
-    margin: 0;
+    margin: auto;
 }
 
 .proj-item {
@@ -78,6 +76,9 @@ footer img {
 /* Prevents a tags from changing color after being clicked */
 a, a:visited, a:hover, a:active {
     color: inherit;
+}
+.border {
+    border: 1px solid white;
 }
 
 @media all and (max-width: 600px) {
