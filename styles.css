@@ -1,11 +1,14 @@
-
 html, body {
-    background-color: lightslategray;
+    /* background-color: lightslategray; */
     font-family: 'Oxygen', sans-serif;
     letter-spacing: 2px;
     font-size: larger;
     margin: 0;
     padding: 0;
+}
+body {
+    background: linear-gradient(90deg, rgb(97, 112, 128) 21px, transparent 100%) center, linear-gradient(rgb(97, 112, 128) 21px, transparent 99%) center, floralwhite;
+    background-size: 22px 22px;
 }
 
 /* .topnav {
