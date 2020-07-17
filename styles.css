@@ -1,26 +1,25 @@
-body {
+
+html, body {
     background-color: lightslategray;
     font-family: 'Oxygen', sans-serif;
     letter-spacing: 2px;
     font-size: larger;
     margin: 0;
     padding: 0;
-    min-height: 100%;
-}
-html {
-    height: 100%;
 }
 
-.topnav {
+/* .topnav {
     overflow: hidden;
     text-align: center;
     align-items: center;
-    margin: 100px 0 0 0;
-    border: 1px solid black;
-}
+    margin: auto;
+    padding: 80px 0 40px 0;
+    /* width: 100%; */
+    /* border: 1px solid black; */    
+/*}  */
 
 .topnav img {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     padding: 0;
     border-radius: 5px;
     margin-bottom: -6px;
@@ -30,43 +29,63 @@ html {
     /* float: left; */
     text-decoration: none;
     font-size: 25px;
-    border: 1px solid red;
 }
 
 footer {
-    position: relative;
-    bottom: 0;
     text-align: center;
-    border: 1px solid black;
+    margin-bottom: 100px;
+    /* border: 1px solid black; */    
 }
 
 footer img {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     border-radius: 50px;
     margin-bottom: -5px;
-    /* height: 100%;
-    width: 100%; */
 }
 
-footer a {
-    border: 1px solid red;
+#container {
+    display: grid;
+    width: 100%;
+   /*  height: 100%; */
+    grid-template-areas: "header" "content" "footer";
+    grid-template-rows: 150px auto 65px;
+    grid-template-columns: 1fr;
 }
-
-.dummy {
-    width: 200px;
-    height: 100px;
-    border: 1px solid white;
-    overflow: hidden;
+#container > .topnav {
+    grid-area: "header";
     text-align: center;
-    align-items: center;
-    margin: 50px auto auto auto;
+    /* background-color: brown; */
+    margin: auto 0 0 0;
+    /* padding: 80px 0 40px 0; */
+}
+#container > .content {
+    grid-area: content;
+    /* background-color: blueviolet; */
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+#container > footer {
+    grid-area: footer;
+    /* background-color: blue; */
+}
+.content {margin: 0; padding: 0;}
+.dummy {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px;
+    align-items: stretch;
+}
+.border {
+    border: 1px solid white;
+    margin: 0;
 }
 
 .dummy-item {
-    width: 40%;
-    height: 40%;
-    margin: 5px 0 auto 5px;
-    border: 1px solid white;
+    display: grid;
+    margin: auto;
+    grid-template-columns: .3fr 1fr;
+    gap: 0 10px;
 }
 
 /* Prevents a tags from changing color after being clicked */
@@ -87,7 +106,7 @@ a, a:visited, a:hover, a:active {
         border-radius: 50px;
         margin: auto;
     } */
-    .topnav {
-        margin-top: 50px;
-    }
+    /* .topnav {
+        padding-top: 50px;
+    } */
 }
