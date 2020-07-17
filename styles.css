@@ -5,24 +5,51 @@ body {
     font-size: larger;
     margin: 0;
     padding: 0;
+    min-height: 100%;
+}
+html {
+    height: 100%;
 }
 
 .topnav {
     overflow: hidden;
     text-align: center;
     align-items: center;
-    margin-top: 100px;
+    margin: 100px 0 0 0;
+    border: 1px solid black;
+}
+
+.topnav img {
+    border: 1px solid blue;
+    padding: 0;
+    border-radius: 5px;
+    margin-bottom: -6px;
 }
 
 .topnav a {
     /* float: left; */
     text-decoration: none;
-    margin: 0 10px 0 0;
     font-size: 25px;
+    border: 1px solid red;
 }
 
-.topnav a:last-child {
-    margin-right: 0;
+footer {
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    border: 1px solid black;
+}
+
+footer img {
+    border: 1px solid blue;
+    border-radius: 50px;
+    margin-bottom: -5px;
+    /* height: 100%;
+    width: 100%; */
+}
+
+footer a {
+    border: 1px solid red;
 }
 
 .dummy {
@@ -41,7 +68,6 @@ body {
     margin: 5px 0 auto 5px;
     border: 1px solid white;
 }
-
 
 /* Prevents a tags from changing color after being clicked */
 a, a:visited, a:hover, a:active {
