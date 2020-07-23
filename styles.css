@@ -56,22 +56,51 @@ footer img {
 }
 .content {margin: 0; padding: 0;}
 
-.proj-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.proj-item {
+#proj-container {
     display: grid;
-    /* margin: auto auto 5px auto; */
-    max-width: 290px;
-    overflow: hidden;
-    margin-bottom: 5px;
-    padding-bottom: 5px;
-    /* align-items: center; */
-    grid-template-columns: .3fr 1fr;
-    gap: 0 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    width: 50vh;
+    min-width: 360px;
+    margin: auto;
+    /* grid-template-columns: 124px 1fr; */
+    grid-template-columns: 124px minmax(0, 1fr);
+    grid-template-rows: .5fr .5fr .5fr .5fr;
+    grid-template-areas: "1 1-text" "2 2-text" "3 3-text" "4 4-text";
+    gap: 10px 10px;
+}
+#proj-container > #item1 {
+    grid-area: 1;
+    /* background-color: black; */
+}
+#proj-container > #text1 {
+    grid-area: 2-text;
+    /* background-color: black; */
+}
+
+#proj-container > #item2 {
+    /* background-color: white; */
+    grid-area: 2;
+}
+#proj-container > #text2 {
+    grid-area: 1-text;
+    /* background-color: white; */
+}
+
+#proj-container > #item3 {
+    grid-area: 3;
+    /* background-color: gray; */
+}
+#proj-container > #text3 {
+    grid-area: 3-text;
+    /* background-color: gray; */
+}
+
+#proj-container > #item4 {
+    grid-area: 4;
+    /* background-color: gray; */
+}
+#proj-container > #text4 {
+    grid-area: 4-text;
+    /* background-color: gray; */
 }
 
 /* Prevents a tags from changing color after being clicked */
@@ -80,6 +109,11 @@ a, a:visited, a:hover, a:active {
 }
 .border {
     border: 1px solid white;
+}
+p {
+    word-wrap: break-word;
+    margin: 0;
+    padding: 5px 0 0 5px;
 }
 
 @media all and (max-width: 600px) {
