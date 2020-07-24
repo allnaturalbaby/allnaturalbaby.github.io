@@ -103,6 +103,47 @@ footer img {
     /* background-color: gray; */
 }
 
+/* counter */
+.counter {
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 0;
+}
+
+.box {
+    text-align: center;
+    min-width: 100px;
+}
+
+.time {
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.label {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.counter-input {
+    width: 230px;
+    width: 240px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px auto auto auto;
+}
+
+.counter-input input {
+    width: 50px;
+}
+
+#setTime {
+    display: block;
+    margin: 5px auto auto auto;
+}
+
 /* Prevents a tags from changing color after being clicked */
 a, a:visited, a:hover, a:active {
     color: inherit;

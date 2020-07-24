@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Personal site</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="container">
+        <div class="topnav">
+            <a href="projects.html"><img src="/images/projects.png" alt="projects"></a>
+            <a href="/index.html"><img src="/images/home.png" alt="home"></a>
+        </div>
+        <div class="content">
+            <h1 style="text-align: center;">counter</h1>
+            <div class="counter border">
+                <div class="box">
+                    <div class="time" id="days">00</div>
+                    <span class="label">days</span>
+                </div>
+                <div class="box">
+                    <div class="time" id="hours">00</div>
+                    <span class="label">hours</span>
+                </div>
+                <div class="box">
+                    <div class="time" id="minutes">00</div>
+                    <span class="label">minutes</span>
+                </div>
+                <div class="box">
+                    <div class="time" id="seconds">00</div>
+                    <span class="label">seconds</span>
+                </div>
+            </div>
+            <!-- button below -->
+            <div class="counter-input border">
+                <input type="number" id="i1" placeholder="00" width="10px">
+                <input type="number" id="i2" placeholder="00" width="10px">
+                <input type="number" id="i3" placeholder="00" width="10px">
+                <input type="number" id="i4" placeholder="00" width="10px">
+            </div>
+            <button id="setTime">Start countdown</button>
+        </div>
+    
+        <footer>
+            <a href="https://github.com/allnaturalbaby" target="_blank"><img src="/images/GitHub-Mark-Light-64px.png" alt="GitHub"></a>
+        </footer>
+    </section>
+    <script src="/script.js"></script>
+</body>
+</html>
