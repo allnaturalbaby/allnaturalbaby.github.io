@@ -144,6 +144,21 @@ footer img {
     margin: 5px auto auto auto;
 }
 
+.test-counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    margin: 50px auto;
+}
+.test-display {
+    margin: auto;
+}
+#t1 {
+    margin: auto;
+    width: 50px;
+}
+
 /* Prevents a tags from changing color after being clicked */
 a, a:visited, a:hover, a:active {
     color: inherit;
