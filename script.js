@@ -7,6 +7,12 @@ const hoursElement = document.getElementById('hours');
 const minutesElement = document.getElementById('minutes');
 const secondsElement = document.getElementById('seconds');
 
+const button = document.querySelector('#setTime');
+const iDays = document.querySelector('#i1');
+const iHours = document.querySelector('#i2');
+const iMinutes = document.querySelector('#i3');
+const iSeconds = document.querySelector('#i4');
+
 const getTimeDifference = (targetDate) => {
   let diff = targetDate.getTime() - Date.now();
 
@@ -34,14 +40,29 @@ const updateTime = (targetDate) => {
   minutesElement.innerText = minutes.toString().padStart(2, '0');
   secondsElement.innerText = seconds.toString().padStart(2, '0');
 };
+let a = new Date();
+let b = a;
+let targetDate = new Date();
 
-const cdY = new Date().getFullYear() + 0;
-const cdM = new Date().getMonth() + 1;
-const cdD = new Date().getDate() + 0;
-const cdH = new Date().getHours() + 0;
-const cdMin = new Date().getMinutes() + 0;
-const cdS = new Date().getSeconds() + 10;
-const targetDate = new Date(`${cdY}-${cdM}-${cdD} ${cdH}:${cdMin}:${cdS}`);
+const updateDate = function() {
+  // let cdY = b.getFullYear();
+  targetDate.setDate(targetDate.getDate() + iDays.valueAsNumber);
+  targetDate.setHours(targetDate.getHours() + iHours.valueAsNumber);
+  targetDate.getMonth() + 1;
+  targetDate.setMinutes(targetDate.getMinutes() + iMinutes.valueAsNumber);
+  targetDate.setSeconds(targetDate.getSeconds() + iSeconds.valueAsNumber);
+  // targetDate = new Date(`${cdY}-${cdM}-${cdD} ${cdH}:${cdMin}:${cdS}`)
+};
+
+button.addEventListener("click", updateDate);
+
+// const cdY = new Date().getFullYear() + 0;
+// const cdM = new Date().getMonth() + 1;
+// const cdD = new Date().getDate() + 0;
+// const cdH = new Date().getHours() + 0;
+// const cdMin = new Date().getMinutes() + 0;
+// const cdS = new Date().getSeconds() + 10;
+// const targetDate = new Date(`${cdY}-${cdM}-${cdD} ${cdH}:${cdMin}:${cdS}`);
 
 updateTime(targetDate);
 setInterval(updateTime, 1000, targetDate);
