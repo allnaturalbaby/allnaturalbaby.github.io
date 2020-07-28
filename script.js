@@ -35,23 +35,26 @@ const getTimeDifference = (targetDate) => {
 
 const updateTime = (targetDate) => {
   const { days, hours, minutes, seconds } = getTimeDifference(targetDate);
-  daysElement.innerText = days;
+  daysElement.innerText = days.toString().padStart(2, '0');
   hoursElement.innerText = hours.toString().padStart(2, '0');
   minutesElement.innerText = minutes.toString().padStart(2, '0');
   secondsElement.innerText = seconds.toString().padStart(2, '0');
 };
 let a = new Date();
 let b = a;
-let targetDate = new Date();
+let targetDate;
 
 const updateDate = function() {
   // let cdY = b.getFullYear();
+  targetDate = new Date();
   targetDate.setDate(targetDate.getDate() + iDays.valueAsNumber);
   targetDate.setHours(targetDate.getHours() + iHours.valueAsNumber);
   targetDate.getMonth() + 1;
   targetDate.setMinutes(targetDate.getMinutes() + iMinutes.valueAsNumber);
   targetDate.setSeconds(targetDate.getSeconds() + iSeconds.valueAsNumber);
   // targetDate = new Date(`${cdY}-${cdM}-${cdD} ${cdH}:${cdMin}:${cdS}`)
+  updateTime(targetDate);
+  setInterval(updateTime, 1000, targetDate);
 };
 
 button.addEventListener("click", updateDate);
@@ -64,5 +67,3 @@ button.addEventListener("click", updateDate);
 // const cdS = new Date().getSeconds() + 10;
 // const targetDate = new Date(`${cdY}-${cdM}-${cdD} ${cdH}:${cdMin}:${cdS}`);
 
-updateTime(targetDate);
-setInterval(updateTime, 1000, targetDate);
