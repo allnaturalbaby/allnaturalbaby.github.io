@@ -8,6 +8,7 @@ html, body {
 }
 body {
     background: -webkit-linear-gradient(90deg, rgb(97, 112, 128) 21px, rgba(255, 255, 255, 0) 100%) center, linear-gradient(rgb(97, 112, 128) 21px, rgba(255, 255, 255, 0) 99%) center, floralwhite;
+    background: linear-gradient(90deg, rgb(97, 112, 128) 21px, rgba(255, 255, 255, 0) 100%) center, linear-gradient(rgb(97, 112, 128) 21px, rgba(255, 255, 255, 0) 99%) center, floralwhite;
     background-size: 22px 22px;
 }
 
