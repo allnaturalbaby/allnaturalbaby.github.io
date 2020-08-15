@@ -183,7 +183,7 @@ a, a:visited, a:hover, a:active {
 }
 
 
-@media all and (max-width: 800px) {
+@media all and (max-width: 1200px) {
     body {
         background: rgb(97, 112, 128);
     }
