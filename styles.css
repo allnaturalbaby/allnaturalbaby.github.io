@@ -33,6 +33,11 @@ footer img {
     margin-bottom: -5px;
 }
 
+.content {
+    margin: 20px 0 0 0; 
+    padding: 0;
+}
+
 #container {
     display: grid;
     width: 100%;
@@ -54,10 +59,6 @@ footer img {
     grid-area: footer;
     margin-top: 20px;
     /* background-color: blue; */
-}
-.content {
-    margin: 20px 0 0 0; 
-    padding: 0;
 }
 
 #proj-container {
@@ -154,9 +155,19 @@ footer img {
 }
 /* ----------------------- countdown end ----------------------- */
 
-/* #timeDisplay {
-   
-} */
+#index-content {
+    display: flex; 
+    /* align-items: center;  */
+    justify-content: center;
+    flex-direction: column;
+}
+
+#index-content p {
+   margin: auto auto 0 auto;
+}
+#index-content h1 {
+    margin: 25px auto auto auto;
+ }
 
 /* Prevents a tags from changing color after being clicked */
 a, a:visited, a:hover, a:active {
