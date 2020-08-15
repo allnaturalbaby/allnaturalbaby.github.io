@@ -8,6 +8,7 @@ const minutesElement = document.getElementById('minutes');
 const secondsElement = document.getElementById('seconds');
 
 const button = document.querySelector('#setTime');
+const counterInput = document.querySelector(".counter-input");
 const iDays = document.querySelector('#i1');
 const iHours = document.querySelector('#i2');
 const iMinutes = document.querySelector('#i3');
@@ -16,7 +17,7 @@ const iSeconds = document.querySelector('#i4');
 // needed the time difference to know when to clear the intervals,
 // should probably find a better way of doing this later.
 const timeDiffVal = (targetDate) => {
-  console.log(targetDate.getTime() - Date.now());
+  // console.log(targetDate.getTime() - Date.now());
   return targetDate.getTime() - Date.now();
 }
 
@@ -51,13 +52,15 @@ const updateTime = (targetDate) => {
   secondsElement.innerText = seconds.toString().padStart(2, '0');
   // console.log('${days} ${hours} ${minutes} ${seconds}');
   if(timeDiffVal(targetDate) > 0) {
-    document.querySelector('#setTime').style.visibility = "hidden";
-    console.log("hidden");
+    button.style.visibility = "hidden";
+    counterInput.style.visibility = "hidden";
+    // console.log("hidden");
   } else {
-    document.querySelector('#setTime').style.visibility = "visible";
-    console.log("visible");
+    button.style.visibility = "visible";
+    counterInput.style.visibility = "visible";
+    // console.log("visible");
   }
-  console.log("test");
+  // console.log("test");
 };
 
 // let a = new Date();
@@ -74,13 +77,9 @@ const updateDate = function() {
   targetDate.setSeconds(targetDate.getSeconds() + iSeconds.valueAsNumber);
   // targetDate = new Date(`${cdY}-${cdM}-${cdD} ${cdH}:${cdMin}:${cdS}`)
   updateTime(targetDate);
-<<<<<<< HEAD
-  timeDiffVal(targetDate);
-=======
   // timeDiffVal(targetDate);
 
-  let interval = setInterval(updateTime, 500, targetDate);
->>>>>>> master
+  let interval = setInterval(updateTime, 600, targetDate);
 
   let y = setInterval(function() {
     let x = timeDiffVal(targetDate);
@@ -89,9 +88,9 @@ const updateDate = function() {
     if(x <= 0) {
       clearInterval(y);
       clearInterval(interval);
-      console.log("intervals cleared");
+      // console.log("intervals cleared");
     }
-  }, 500);
+  }, 600);
 };
 
 button.addEventListener("click", updateDate);
