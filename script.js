@@ -8,6 +8,7 @@ const minutesElement = document.getElementById('minutes');
 const secondsElement = document.getElementById('seconds');
 
 const button = document.querySelector('#setTime');
+const counterInput = document.querySelector(".counter-input");
 const iDays = document.querySelector('#i1');
 const iHours = document.querySelector('#i2');
 const iMinutes = document.querySelector('#i3');
@@ -51,10 +52,12 @@ const updateTime = (targetDate) => {
   secondsElement.innerText = seconds.toString().padStart(2, '0');
   // console.log('${days} ${hours} ${minutes} ${seconds}');
   if(timeDiffVal(targetDate) > 0) {
-    document.querySelector('#setTime').style.visibility = "hidden";
+    button.style.visibility = "hidden";
+    counterInput.style.visibility = "hidden";
     console.log("hidden");
   } else {
-    document.querySelector('#setTime').style.visibility = "visible";
+    button.style.visibility = "visible";
+    counterInput.style.visibility = "visible";
     console.log("visible");
   }
   console.log("test");
