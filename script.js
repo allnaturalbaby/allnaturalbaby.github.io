@@ -50,11 +50,18 @@ const updateTime = (targetDate) => {
   minutesElement.innerText = minutes.toString().padStart(2, '0');
   secondsElement.innerText = seconds.toString().padStart(2, '0');
   // console.log('${days} ${hours} ${minutes} ${seconds}');
+  if(timeDiffVal(targetDate) > 0) {
+    document.querySelector('#setTime').style.visibility = "hidden";
+    console.log("hidden");
+  } else {
+    document.querySelector('#setTime').style.visibility = "visible";
+    console.log("visible");
+  }
   console.log("test");
 };
 
-let a = new Date();
-let b = a;
+// let a = new Date();
+// let b = a;
 let targetDate;
 
 const updateDate = function() {
@@ -62,14 +69,19 @@ const updateDate = function() {
   targetDate = new Date();
   targetDate.setDate(targetDate.getDate() + iDays.valueAsNumber);
   targetDate.setHours(targetDate.getHours() + iHours.valueAsNumber);
-  targetDate.getMonth() + 1;
+  targetDate.getMonth() /* + 1 */;
   targetDate.setMinutes(targetDate.getMinutes() + iMinutes.valueAsNumber);
   targetDate.setSeconds(targetDate.getSeconds() + iSeconds.valueAsNumber);
   // targetDate = new Date(`${cdY}-${cdM}-${cdD} ${cdH}:${cdMin}:${cdS}`)
   updateTime(targetDate);
+<<<<<<< HEAD
   timeDiffVal(targetDate);
+=======
+  // timeDiffVal(targetDate);
 
-  let interval = setInterval(updateTime, 1000, targetDate);
+  let interval = setInterval(updateTime, 500, targetDate);
+>>>>>>> master
+
   let y = setInterval(function() {
     let x = timeDiffVal(targetDate);
 
@@ -79,16 +91,7 @@ const updateDate = function() {
       clearInterval(interval);
       console.log("intervals cleared");
     }
-  }, 1000);
+  }, 500);
 };
 
 button.addEventListener("click", updateDate);
-
-// const cdY = new Date().getFullYear() + 0;
-// const cdM = new Date().getMonth() + 1;
-// const cdD = new Date().getDate() + 0;
-// const cdH = new Date().getHours() + 0;
-// const cdMin = new Date().getMinutes() + 0;
-// const cdS = new Date().getSeconds() + 10;
-// const targetDate = new Date(`${cdY}-${cdM}-${cdD} ${cdH}:${cdMin}:${cdS}`);
-

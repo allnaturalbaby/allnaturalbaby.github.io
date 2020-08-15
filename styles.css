@@ -7,7 +7,8 @@ html, body {
     padding: 0;
 }
 body {
-    background: linear-gradient(90deg, rgb(97, 112, 128) 21px, transparent 100%) center, linear-gradient(rgb(97, 112, 128) 21px, transparent 99%) center, floralwhite;
+    background: -webkit-linear-gradient(90deg, rgb(97, 112, 128) 21px, rgba(255, 255, 255, 0) 100%) center, linear-gradient(rgb(97, 112, 128) 21px, rgba(255, 255, 255, 0) 99%) center, floralwhite;
+    background: linear-gradient(90deg, rgb(97, 112, 128) 21px, rgba(255, 255, 255, 0) 100%) center, linear-gradient(rgb(97, 112, 128) 21px, rgba(255, 255, 255, 0) 99%) center, floralwhite;
     background-size: 22px 22px;
 }
 
@@ -140,6 +141,9 @@ footer img {
 }
 
 #setTime {
+    font-size: 1.2em;
+    border: none;
+    background: none;
     display: block;
     margin: 5px auto auto auto;
 }
