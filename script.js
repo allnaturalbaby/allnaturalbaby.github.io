@@ -16,7 +16,7 @@ const iSeconds = document.querySelector('#i4');
 // needed the time difference to know when to clear the intervals,
 // should probably find a better way of doing this later.
 const timeDiffVal = (targetDate) => {
-  // console.log("timeDiff test");
+  console.log(targetDate.getTime() - Date.now());
   return targetDate.getTime() - Date.now();
 }
 
@@ -67,6 +67,7 @@ const updateDate = function() {
   targetDate.setSeconds(targetDate.getSeconds() + iSeconds.valueAsNumber);
   // targetDate = new Date(`${cdY}-${cdM}-${cdD} ${cdH}:${cdMin}:${cdS}`)
   updateTime(targetDate);
+  timeDiffVal(targetDate);
 
   let interval = setInterval(updateTime, 1000, targetDate);
   let y = setInterval(function() {
