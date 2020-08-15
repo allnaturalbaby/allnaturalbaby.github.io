@@ -55,7 +55,12 @@ footer img {
     margin-top: 20px;
     /* background-color: blue; */
 }
-.content {margin: 20px 0 0 0; padding: 0;}
+.content {
+    margin: 20px 0 0 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
 
 #proj-container {
     display: grid;
@@ -104,7 +109,7 @@ footer img {
     /* background-color: gray; */
 }
 
-/* counter */
+/* countdown start */
 .counter {
     width: 500px;
     display: flex;
@@ -148,20 +153,10 @@ footer img {
     display: block;
     margin: 5px auto auto auto;
 }
+/* countdown end */
 
-.test-counter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 250px;
-    margin: 50px auto;
-}
-.test-display {
-    margin: auto;
-}
-#t1 {
-    margin: auto;
-    width: 50px;
+#timeDisplay {
+    margin: auto auto 10px auto;
 }
 
 /* Prevents a tags from changing color after being clicked */
