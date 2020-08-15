@@ -55,7 +55,7 @@ footer img {
     margin-top: 20px;
     /* background-color: blue; */
 }
-.content {margin: 0; padding: 0;}
+.content {margin: 20px 0 0 0; padding: 0;}
 
 #proj-container {
     display: grid;
@@ -166,15 +166,21 @@ footer img {
 /* Prevents a tags from changing color after being clicked */
 a, a:visited, a:hover, a:active {
     color: inherit;
+    text-decoration-line: none;
+}
+#proj-container a {
+    font-size: larger;
+    color: rgb(240, 240, 240);
 }
 .border {
     border: 1px solid white;
 }
-p {
+#proj-container p {
     word-wrap: break-word;
     margin: 0;
-    padding: 5px 0 0 5px;
+    padding: 12px 0 0 5px;
 }
+
 
 @media all and (max-width: 600px) {
     /* body {
