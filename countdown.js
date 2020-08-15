@@ -17,7 +17,7 @@ const iSeconds = document.querySelector('#i4');
 // needed the time difference to know when to clear the intervals,
 // should probably find a better way of doing this later.
 const timeDiffVal = (targetDate) => {
-  console.log(targetDate.getTime() - Date.now());
+  // console.log(targetDate.getTime() - Date.now());
   return targetDate.getTime() - Date.now();
 }
 
@@ -54,13 +54,13 @@ const updateTime = (targetDate) => {
   if(timeDiffVal(targetDate) > 0) {
     button.style.visibility = "hidden";
     counterInput.style.visibility = "hidden";
-    console.log("hidden");
+    // console.log("hidden");
   } else {
     button.style.visibility = "visible";
     counterInput.style.visibility = "visible";
-    console.log("visible");
+    // console.log("visible");
   }
-  console.log("test");
+  // console.log("test");
 };
 
 // let a = new Date();
@@ -88,7 +88,7 @@ const updateDate = function() {
     if(x <= 0) {
       clearInterval(y);
       clearInterval(interval);
-      console.log("intervals cleared");
+      // console.log("intervals cleared");
     }
   }, 600);
 };

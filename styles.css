@@ -143,6 +143,7 @@ footer img {
 #setTime {
     font-size: 1.2em;
     border: none;
+    outline: none;
     background: none;
     display: block;
     margin: 5px auto auto auto;
