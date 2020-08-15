@@ -76,7 +76,7 @@ const updateDate = function() {
   updateTime(targetDate);
   // timeDiffVal(targetDate);
 
-  let interval = setInterval(updateTime, 500, targetDate);
+  let interval = setInterval(updateTime, 600, targetDate);
 
   let y = setInterval(function() {
     let x = timeDiffVal(targetDate);
@@ -87,7 +87,7 @@ const updateDate = function() {
       clearInterval(interval);
       console.log("intervals cleared");
     }
-  }, 500);
+  }, 600);
 };
 
 button.addEventListener("click", updateDate);
